@@ -17,67 +17,65 @@
 </head>
 
 <body>
-    <div class="d-flex justify-content-center">
-        <div class="imagen col-md-6"></div>
-        <div class="col-12 col-md-6 container-xl mt-md-5 pt-md-5">
-            <div class="col-10 mx-auto my-auto">
-                <h1 id="heading" class="text-center mt-5">Registrandote Aprenderás <br> <span class="typed"></span></h1>
-                <form class="formulario">
-                    <fieldset class="rounded px-4 py-4 shadow ">
-                        <legend class="mb-4 fs-5 fw-bold text-uppercase mt-3">Registrar Usuario</legend>
+    <div class="container-xl d-flex flex-column justify-content-center align-items-center">
+        <h1 id="heading" class="text-center mt-5 text-white">Registrandote Aprenderás <br> <span class="typed"></span></h1>
+        <div class="col-12 col-md-5 col-sm-8 mt-5">
+            <form class="formulario bg-white rounded shadow-lg">
+                <fieldset class="rounded px-4 py-4 shadow ">
+                    <legend class="mb-4 fs-5 fw-bold text-uppercase mt-3">Registrar Usuario</legend>
 
-                        <div class="d-flex flex-column mb-3">
-                            <label class="" for="nombre" name="nombre">Nombre:</label>
-                            <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+                    <div class="d-flex flex-column mb-3">
+                        <label class="" for="nombre" name="nombre">Nombre:</label>
+                        <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="d-flex flex-column mb-3">
+                        <label class="" for="apellido" name="apellido">Apellidos:</label>
+                        <input class="form-control" type="text" name="apellido" id="apellido"
+                            placeholder="Tu(s) Apellido(s)">
+                    </div>
+
+                    <div class="d-flex flex-column mb-3">
+                        <label class="" for="telefono" name="telefono">Telefono:</label>
+                        <input class="form-control" type="tel" name="telefono" id="telefono"
+                            placeholder="Ejem: 123-456-7890">
+                    </div>
+
+                    <div class="d-flex flex-column mb-3">
+                        <label class="" for="correo" name="correo">Correo:</label>
+                        <input class="form-control" type="email" name="correo" id="correo"
+                            placeholder="Ejem: micorreo@dominio.com">
+                    </div>
+
+                    <div class="d-flex flex-column mb-3">
+                        <label class="" for="password" name="password">Contraseña:</label>
+                        <input class="form-control" type="password" name="password" id="password">
+                    </div>
+
+                    <div class="d-md-flex justify-content-evenly mt-2">
+                        <div class="col-md-5">
+                            <button id="boton-submit" type="submit" class="w-100 btn btn-success" disabled><i
+                                    class="bi bi-send-plus-fill"></i>
+                                Registrar Usuario</button>
                         </div>
-
-                        <div class="d-flex flex-column mb-3">
-                            <label class="" for="apellido" name="apellido">Apellidos:</label>
-                            <input class="form-control" type="text" name="apellido" id="apellido"
-                                placeholder="Tu(s) Apellido(s)">
+                        <div class="mt-2 mt-md-0 col-md-5">
+                            <button id="boton-reset" type="reset" class="w-100 btn btn-danger"><i
+                                    class="bi bi-trash-fill"></i>
+                                Resetear</button>
                         </div>
-
-                        <div class="d-flex flex-column mb-3">
-                            <label class="" for="telefono" name="telefono">Telefono:</label>
-                            <input class="form-control" type="tel" name="telefono" id="telefono"
-                                placeholder="Ejem: 123-456-7890">
+                    </div>
+                    <div id="spinner" class="visually-hidden justify-content-center mt-4">
+                        <div class="spinner-border text-success" role="status">
                         </div>
+                    </div>
 
-                        <div class="d-flex flex-column mb-3">
-                            <label class="" for="correo" name="correo">Correo:</label>
-                            <input class="form-control" type="email" name="correo" id="correo"
-                                placeholder="Ejem: micorreo@dominio.com">
-                        </div>
+                </fieldset>
 
-                        <div class="d-flex flex-column mb-3">
-                            <label class="" for="password" name="password">Contraseña:</label>
-                            <input class="form-control" type="password" name="password" id="password">
-                        </div>
+            </form>
 
-                        <div class="d-md-flex justify-content-evenly mt-2">
-                            <div class="col-md-5">
-                                <button id="boton-submit" type="submit" class="w-100 btn btn-success" disabled><i
-                                        class="bi bi-send-plus-fill"></i>
-                                    Registrar Usuario</button>
-                            </div>
-                            <div class="mt-2 mt-md-0 col-md-5">
-                                <button id="boton-reset" type="reset" class="w-100 btn btn-danger"><i
-                                        class="bi bi-trash-fill"></i>
-                                    Resetear</button>
-                            </div>
-                        </div>
-                        <div id="spinner" class="visually-hidden justify-content-center mt-4">
-                            <div class="spinner-border text-success" role="status">
-                            </div>
-                        </div>
-                        
-                    </fieldset>
-
-                </form>
-
-            </div>
         </div>
     </div>
+
 
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
