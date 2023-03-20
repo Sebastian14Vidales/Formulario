@@ -570,10 +570,6 @@ legend + * {
   justify-content: space-evenly !important;
 }
 
-.align-items-center {
-  align-items: center !important;
-}
-
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;
@@ -594,6 +590,10 @@ legend + * {
 
 .mt-4 {
   margin-top: 1.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
 }
 
 .mb-3 {
@@ -649,10 +649,20 @@ legend + * {
   .mt-md-0 {
     margin-top: 0 !important;
   }
+  .mt-md-5 {
+    margin-top: 3rem !important;
+  }
+  .pt-md-5 {
+    padding-top: 3rem !important;
+  }
 }
 body {
-  height: 50rem;
-  overflow: hidden;
+  overflow: auto;
+}
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
 }
 .tecnologias {
   font-weight: 700;
@@ -664,5 +674,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60rem;
+}
+@media (min-width: 768px) {
+  .imagen {
+    height: 70rem;
+  }
 }
