@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const spinner = document.querySelector('#spinner');
 
-  inputNombre.addEventListener('blur', ejecutarInput);
-  inputApellido.addEventListener('blur', ejecutarInput);
+  inputNombre.addEventListener('input', ejecutarInput);
+  inputApellido.addEventListener('input', ejecutarInput);
   inputTelefono.addEventListener('blur', ejecutarInput);
   inputCorreo.addEventListener('blur', ejecutarInput);
   inputPassword.addEventListener('blur', ejecutarInput);
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 3000);
     }, 3000);
   }
-  
+
   function resetearFormulario() {
     datos.nombre = '';
     datos.apellido = '';

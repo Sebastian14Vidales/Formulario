@@ -654,6 +654,10 @@ body {
   height: 50rem;
   overflow: hidden;
 }
+.tecnologias {
+  font-weight: 700;
+  color: orange;
+}
 
 .imagen {
   background-image: url(../img/Sesion.jpg);
